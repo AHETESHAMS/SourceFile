@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.BridgeLabz.FunctionalPrograms.Utility;
 import com.bridgelabz.dsutility.Queue;
-
 public class PrimeWithQueue {
 	
 	public static void main(String[] args) {

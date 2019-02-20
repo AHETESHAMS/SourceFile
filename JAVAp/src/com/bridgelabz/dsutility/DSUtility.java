@@ -124,4 +124,26 @@ public class DSUtility {
 		}
 		return balance;
 	}
+	public static int binomialCoef(int n,int k)
+	{
+		int res = 1;
+		if (k > n - k) 
+			k = n - k; 
+		for(int i=0;i<k;++i)
+		{
+			res*= (n-i);
+			res/= (i+1);
+		}
+		return res;
+	}
+	public static int catlanNumber(int n)
+	{
+		int c = binomialCoef(2*n,n);
+		return c/(n+1);
+	}
+	public static int calBST(int n)
+	{
+		int count = catlanNumber(n);
+			return count;
+	}
 }

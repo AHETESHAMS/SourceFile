@@ -25,12 +25,10 @@ public class Prime2D {
 				{
 					i++;
 					temp=temp+100;
-				}
-					
-			}	
-		
+					}
+				}	
 		}
 		for(ArrayList listItem : primeList)
 			System.out.println(listItem);
-	}
+		}
 }
