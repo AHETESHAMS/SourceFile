@@ -6,10 +6,8 @@ import com.bridgelabz.dsutility.LinkedList;
 public class CalendarQueue {
 
 	public static void main(String[] args) {
-		int year;
-		int month;
-		int startDayOfMonth;
-		int spaces;
+		int year,startDayOfMonth,spaces;
+		//Creating an object of queue in a linked list
 		LinkedList calendarQueue = new LinkedList();
 		System.out.println("Enter the Year");
 		year = Utility.singleIntegerInput();
@@ -40,8 +38,6 @@ public class CalendarQueue {
             	if (((i + spaces) % 7 == 0) || (i == days[M])) System.out.println();
             }	
             System.out.println();
-
-	}
-
+         }
 	}
 }	

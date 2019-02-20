@@ -7,7 +7,6 @@ import com.BridgeLabz.FunctionalPrograms.Utility;
 import com.bridgelabz.dsutility.Queue;
 
 public class PrimeWithQueue {
-
 	
 	public static void main(String[] args) {
 		List<Integer> prime = new ArrayList<>(); 
@@ -16,7 +15,7 @@ public class PrimeWithQueue {
 		int num2,cnt=0;
 		boolean anagramResult=false;	
 		
-					/*Prime*/
+		//Prime Number
 		
 		for(num1=1;num1<=1000;num1++)
 		{			
@@ -29,7 +28,7 @@ public class PrimeWithQueue {
 		System.out.println("List of Prime Numbers:");
 		System.out.println(prime);
 		
-					/*Anagram*/
+		//Anagram
 		
 		for(int i=7;i<prime.size();i++)
 		{
@@ -46,18 +45,14 @@ public class PrimeWithQueue {
 					anagram.add(num1);
 					break;
 				}	
-					
 			}
-			
 		}
-		
 		System.out.println("List of Anagram Prime Numbers:");
 		System.out.println(anagram);
 		
-						/*Queue Operations*/
+		//Queue Operations
 		
 		Queue queue = new Queue(200);
-		
 		int a;
 		for(int i=0;i<anagram.size();i++)
 		{
@@ -65,18 +60,12 @@ public class PrimeWithQueue {
 			a=anagramnum;
 			queue.enqueue(a);
 			System.out.print(anagramnum+" ");
-			
 		}
-	
 		while(!queue.isEmpty(queue))
 		{
 			int number = queue.dequeueWithPrint();
 			if(number==0) break;
 			System.out.print(number+" ");
-			
 		}
-
-
 	}
-
 }

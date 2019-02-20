@@ -7,10 +7,8 @@ import com.bridgelabz.dsutility.Stack;
 public class CalendarStack {
 
 	public static void main(String[] args) {
-		int year;
-		int month;
-		int startDayOfMonth;
-		int spaces;
+		int year,month,startDayOfMonth,spaces;
+		//Objects for Stack using linked list is created
 		LinkedList calendarStack1 = new LinkedList();
 		LinkedList calendarStack2 = new LinkedList();
 		System.out.println("Enter the Year");
@@ -47,10 +45,6 @@ public class CalendarStack {
             	if (((i + spaces) % 7 == 0) || (i == days[M])) System.out.println();
             }	
             System.out.println();
-
 		}   
-		
-
 	}
-	
 }

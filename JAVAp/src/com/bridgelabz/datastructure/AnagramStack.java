@@ -1,11 +1,8 @@
 package com.bridgelabz.datastructure;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import com.BridgeLabz.FunctionalPrograms.Utility;
 import com.bridgelabz.dsutility.Stack;
-
 public class AnagramStack {
 
 	public static void main(String[] args) {
@@ -32,7 +29,6 @@ public class AnagramStack {
 		
 		for(int i=7;i<prime.size();i++)
 		{
-
 			num1 = prime.get(i);
 			for(int j=i+1;j<prime.size();j++)
 			{
@@ -45,11 +41,8 @@ public class AnagramStack {
 					anagram.add(num1);
 					break;
 				}	
-					
 			}
-			
 		}
-		
 		System.out.println("List of Anagram Prime Numbers:");
 		System.out.println(anagram);
 		
@@ -64,7 +57,6 @@ public class AnagramStack {
 			a=(char) anagramnum;
 			anagramStack.push(a);
 			System.out.println(anagramnum+" is Pushed to Stack");
-			
 		}
 		System.out.println();
 		while(!anagramStack.isEmpty())
@@ -73,7 +65,5 @@ public class AnagramStack {
 			b = (int)a;
 			System.out.println(b+" is Popped from stack");
 		}
-
 	}
-
 }

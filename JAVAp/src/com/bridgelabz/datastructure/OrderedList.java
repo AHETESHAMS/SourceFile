@@ -14,8 +14,7 @@ import com.bridgelabz.dsutility.LinkedList;
 public class OrderedList {
 
 	public static void main(String[] args) {
-		
-		String element,str;
+		String element;
 		//Creation of Linked List Object
 		LinkedList wordList = new LinkedList();
 		String word[] = null;
@@ -44,8 +43,5 @@ public class OrderedList {
 		wordList.show();
 		//Calling to writeFile function to write a file a file
 		wordList = DSUtility.writeFile(wordList);
-		
-		
 	}
-
 }

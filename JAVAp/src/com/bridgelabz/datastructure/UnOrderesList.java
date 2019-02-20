@@ -21,14 +21,12 @@ import com.bridgelabz.dsutility.*;
 public class UnOrderesList {
 	
 	public static void main(String[] args) {
-		
 		String element;
 		//Creation of Linked List Object
 		LinkedList wordList = new LinkedList();
 		String numbers[] = null;
 		//Calling to readFile function to read a file
 		numbers = DSUtility.readFile(numbers);
-			
 		for(String item : numbers)
 		{
 			wordList.insertAtLast(item);
@@ -50,7 +48,5 @@ public class UnOrderesList {
 		wordList.show();
 		//Calling to writeFile function to write a file a file
 		wordList = DSUtility.writeFile(wordList);
-			
 	}
-
 }

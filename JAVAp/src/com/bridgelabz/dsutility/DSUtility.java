@@ -36,23 +36,21 @@ public class DSUtility {
 	 */
 	public static LinkedList writeFile(LinkedList wordList) 
 		{
-			try
-				{
-					
-					BufferedWriter bw = new BufferedWriter(new FileWriter("xyz.txt",true));
-					
-					
-					while(!wordList.isEmpty()) {
-						bw.write(wordList.get()+" ");
-					}
-		            bw.flush();
-					bw.close();
-				}
-			catch(Exception e) 
-				{
-					e.printStackTrace();
-				}
-				return wordList;
+		try
+		{
+			BufferedWriter bw = new BufferedWriter(new FileWriter("xyz.txt",true));
+			while(!wordList.isEmpty()) 
+			{
+				bw.write(wordList.get()+" ");
+			}
+		    bw.flush();
+			bw.close();
+		}
+		catch(Exception e) 
+		{
+			e.printStackTrace();
+		}
+		return wordList;
 		}
 	/**
 	 * Function: Checking if Pair is matching in the expression.
@@ -105,7 +103,6 @@ public class DSUtility {
 			return false;
 		}	
 	}
-	
 	public static int deposit(int balance)
 	{
 		int amnt=0;
@@ -114,7 +111,6 @@ public class DSUtility {
 		balance = balance+amnt;
 		return balance;
 	}
-	
 	public static int withDraw(int balance)
 	{
 		int amnt=0;
@@ -128,6 +124,4 @@ public class DSUtility {
 		}
 		return balance;
 	}
-	
-		
 }

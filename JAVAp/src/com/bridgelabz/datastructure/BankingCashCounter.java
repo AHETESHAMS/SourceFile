@@ -61,5 +61,4 @@ public class BankingCashCounter {
 		}while(capacity>0);	
 		System.out.println("Queue is Empty Now!");
 	}
-
 }

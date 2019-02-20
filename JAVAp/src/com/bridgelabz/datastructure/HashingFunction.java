@@ -13,7 +13,6 @@ public class HashingFunction {
 	public static void main(String[] args) throws IOException {
 		
 		String element;
-		String t;
 		int reminder,integerNumber;
 		//Creation of Linked List Object
 		LinkedList wordList[] = new LinkedList[11];
@@ -68,8 +67,7 @@ public class HashingFunction {
 		{
 			if(wordList[i].isEmpty())
 				continue;
-			LinkedList list= DSUtility.writeFile(wordList[i]);
+		DSUtility.writeFile(wordList[i]);
 		}	
 	}
-
 }

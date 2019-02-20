@@ -8,12 +8,12 @@ public class Prime2D {
 		ArrayList primeList[]= new ArrayList[10];
 		int cnt=0,i=0,temp=100;
 		
-		/*Creating multiple objects of prime number list list and storing into a n array of list*/
+		//Creating multiple objects of prime number list list and storing into a n array of list
 		for(int j=0;j<10;j++)
 		{
 			primeList[j] = new ArrayList();
 		}
-		/*Checking Prime Numbers and storing into a list*/
+		//Checking Prime Numbers and storing into a list
 		while(i<10)
 		{
 			for(int num=2;num<=1000;num++)
@@ -32,6 +32,5 @@ public class Prime2D {
 		}
 		for(ArrayList listItem : primeList)
 			System.out.println(listItem);
-		
 	}
 }

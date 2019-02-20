@@ -74,7 +74,7 @@ public class LinkedList
 			return item;
 		}
 		/**
-		 * 
+		 * Function : To delete a node at last
 		 */
 		public String deleteAtLast()
 		{
